@@ -1,0 +1,206 @@
+body{
+	background-image: url(back.jpg);
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+	
+}
+
+
+#head{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+
+.button {
+    padding: 7px 15px;
+    margin: 10px 0px;
+    border: none;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+#but{
+	text-align: center;
+}
+
+.img1{
+	display: none;
+	height: 100px;
+	width: 100px;
+
+}
+
+.bord{
+	border: 3px solid blue;
+	border-radius: 15px; 
+}
+
+.col1{
+	height: 100px;
+
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border: 1px solid lightblue;
+}
+
+#score{
+	display: none;
+	font-size: 20px;
+	text-align: center;
+	color: orange;
+}
+
+#highscore{
+	display: none;
+	font-size: 20px;
+	text-align: center;
+	color: orange;
+}
+
+#timer{
+	display: none;
+	font-size: 20px;
+	text-align: center;
+	color:blue;
+}
+
+#sc{
+	display: flex;
+}
+
+#but1{
+	text-align: center;
+	display: none;
+
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid red;
+}
+
+.button1:hover {
+  background-color: red;
+  color: white;
+}
+
+#over{
+	text-align: center;
+	transition: 2s;
+	transform: scale(0, 0);
+	color: red;
+	font-size: 50px;
+}
+
+#head{
+	animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+	 0%{     color: #00ff00;    }
+    49%{    color: #00ff00; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #00ff00;    }
+}
+
+#shed{
+	display: none;
+}
+
+#wel{
+	font-size: 40px;
+	color: orange;
+	text-align: center;
+}
+
+@media only screen and (max-width: 430px) {
+  .col1{
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+  }
+  .img1{
+  	width: 40px;
+  	height: 40px;
+  }
+} 
+
+@media only screen and (max-height: 560px ) {
+  #tom{
+  	height:120px!important;
+  }
+  #wel{
+  	font-size: 20px;
+  }
+  #head{
+  	font-size: 20px;
+
+  }
+  .button{
+  	padding: 1px 2px;
+  	font-size: 10px;
+  }
+  .col1{
+  	height: 50px;
+  }
+  .img1{
+  	height: 50px;
+  	width: 75px;
+  }
+  #score{
+  	font-size: 15px;
+  }
+  #highscore{
+  	font-size: 15px;
+  }
+  #timer{
+  	font-size: 15px;
+  }
+  #gameover{
+     	width: 200px;
+     }
+}
+/*@media only screen and (max-height: 400px) {
+  #score{
+  	font-size: 10px;
+  }
+  #highscore{
+  	font-size: 10px;
+  }
+  #timer{
+  	font-size: 10px;
+  }
+  #head{
+  	font-size: 10px;
+  	margin-top: 0px;
+  }
+}*/
+@media only screen and (max-height: 315px) {
+     #tom{
+     	height: 90px!important;
+     }
+
+} 
+ 
+
+
+#tom{
+	height: 300px;
+}
